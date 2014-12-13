@@ -1,0 +1,4 @@
+#!/bin/bash
+export MAX_MEM=${MAX_MEM:="64"}
+echo Running memcached with max memory = $MAX_MEM MB
+memcached -u memcache -m $MAX_MEM
